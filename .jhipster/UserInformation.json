@@ -1,0 +1,37 @@
+{
+  "name": "UserInformation",
+  "fields": [
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "userInformation",
+      "relationshipValidateRules": "required",
+      "relationshipName": "user",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "address",
+      "otherEntityRelationshipName": "userInformation",
+      "relationshipValidateRules": "required",
+      "relationshipName": "address"
+    }
+  ],
+  "javadoc": "@author: PM",
+  "entityTableName": "user_information",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210510140042"
+}
