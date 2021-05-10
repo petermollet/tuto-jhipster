@@ -1,0 +1,37 @@
+
+/**
+*	@author: PM
+*/
+entity Person{
+	lastName String required,
+    firstName String required,
+    birthday LocalDate
+}
+/**
+*	@author: PM
+*/
+entity Address{
+	number String,
+    road String,
+    zipCode String,
+    town String
+}
+/**
+*	@author: PM
+*/
+entity UserInformation {
+	phone String
+}
+
+relationship OneToOne{
+	UserInformation{user required} to User
+}
+
+relationship ManyToOne{
+	Person{address} to Address,
+    UserInformation{address required} to Address
+}
+
+service all with serviceImpl
+dto * with mapstruct
+paginate Person with pagination
