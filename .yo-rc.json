@@ -42,7 +42,9 @@
     "jwtSecretKey": "NTY5Mjc3MGYyODY0OThiMzMzNGVmNzY0OTVmZTc1NTE0YmJiYjFmYjQ1MWRlZTAwM2QzMmRiNTA0NDBhM2EwMTY2OWI4ZTFjNzQ4YWUyN2NlMGI1YmZmZjE3MTEwMTU5NmNiNGFiYmFmYWZkOTExMThjNDdjOTM4YzY3NDYzYmQ=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Person", "Address", "UserInformation"],
+    "lastLiquibaseTimestamp": 1620655242000
   },
   "git-provider": "GitHub",
   "git-company": "petermollet",

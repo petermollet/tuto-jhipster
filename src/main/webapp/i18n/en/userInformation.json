@@ -1,0 +1,26 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "userInformation": {
+      "home": {
+        "title": "User Informations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new User Information",
+        "createOrEditLabel": "Create or edit a User Information",
+        "notFound": "No User Informations found"
+      },
+      "created": "A new User Information is created with identifier {{ param }}",
+      "updated": "A User Information is updated with identifier {{ param }}",
+      "deleted": "A User Information is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User Information {{ id }}?"
+      },
+      "detail": {
+        "title": "User Information"
+      },
+      "id": "ID",
+      "phone": "Phone",
+      "user": "User",
+      "address": "Address"
+    }
+  }
+}
